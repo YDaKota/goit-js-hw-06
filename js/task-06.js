@@ -1,7 +1,7 @@
 const validInput = document.querySelector('#validation-input');
 
 validInput.addEventListener('blur', event => {
-	if (event.target.value.length == validInput.getAttribute('data-length')) {
+	if (event.target.value.length === Number(validInput.getAttribute('data-length'))) {
 		validInput.classList.add('valid');
 		validInput.classList.remove('invalid');
 	} else {
